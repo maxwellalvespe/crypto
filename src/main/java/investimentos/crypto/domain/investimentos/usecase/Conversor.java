@@ -1,7 +1,6 @@
-package investimentos.crypto.calculadora;
+package investimentos.crypto.domain.investimentos.usecase;
 
 import lombok.Getter;
-import lombok.experimental.UtilityClass;
 
 @Getter
 public class Conversor {

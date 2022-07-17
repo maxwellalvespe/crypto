@@ -1,6 +1,6 @@
 package investimentos.crypto.domain.investimentos.dto;
 
-import investimentos.crypto.calculadora.Conversor;
+import investimentos.crypto.domain.investimentos.usecase.Conversor;
 import lombok.Getter;
 
 import java.time.LocalDate;
