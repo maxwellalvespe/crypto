@@ -1,7 +1,6 @@
 package investimentos.crypto.domain.investimentos.dto;
 
 import investimentos.crypto.calculadora.Conversor;
-import investimentos.crypto.domain.investimentos.InvestimentoBTC;
 import lombok.Getter;
 
 import java.time.LocalDate;
@@ -15,7 +14,7 @@ public class InvestimentoBTCResponse {
     private String cotacaoDoDia;
 
 
-    public InvestimentoBTCResponse obterTotalAdiquirido(InvestimentoBTC investimentoBTC) {
+    public InvestimentoBTCResponse obterTotalAdiquirido(InvestimentoBTCRequest investimentoBTC) {
         Conversor conversor = new Conversor();
         dataDaOperacao = investimentoBTC.getMomentoDaTransacao();
         satochesAdiquiridos = String.format("%.8f",

@@ -1,4 +1,4 @@
-package investimentos.crypto.domain.investimentos;
+package investimentos.crypto.domain.investimentos.dto;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import java.time.LocalDate;
 @Builder
 @Getter
 @ToString
-public class InvestimentoBTC {
+public class InvestimentoBTCRequest {
 
     private Double cotacaoDoBitcoin;
     private Double valorInvestido;
