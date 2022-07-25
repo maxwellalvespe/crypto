@@ -22,16 +22,22 @@ public class Investimento {
     private UUID id;
 
     @Column(name = "cotacao_bitcoin", nullable = false)
-    private Double cotacaoDoBitcoin;
+    private Double contacaoAtual;
 
     @Column(name = "valor_investido", nullable = false)
-    private Double valorInvestido;
+    private Double valorDoInvestimento;
 
     @Column(name = "satoches_adiquiridos", nullable = false)
-    private Double satochesAdiquiridos;
+    private Double quantidadeAdiquirida;
 
-    @Column(name = "valor_corretagem")
-    private Double corretagem;
+    @Column(name = "taxa")
+    private Double taxa;
+
+    @Column(name = "quantidade_taxa" )
+    private Double quantidadeTaxaPaga;
+
+    @Column(name = "data_da_compra")
+    private  LocalDateTime dataDaCompra;
 
     @Column(name = "data", nullable = false)
     private final LocalDateTime momentoDaTransacao = LocalDateTime.now();

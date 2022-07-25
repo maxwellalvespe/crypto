@@ -11,8 +11,11 @@ import java.time.LocalDate;
 @ToString
 public class InvestimentoBTCRequest {
 
-    private Double cotacaoDoBitcoin;
-    private Double valorInvestido;
+    private Double contacaoAtual;
+    private Double valorDoInvestimento;
+    private String quantidadeAdiquirida;
+    private double taxaPagaEmSatoches;
+    private LocalDate dataDaCompra;
     private final LocalDate momentoDaTransacao = LocalDate.now();
 
 }
