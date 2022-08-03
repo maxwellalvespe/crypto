@@ -1,8 +1,11 @@
 package investimentos.crypto.domain.investimentos.usecase;
 
 import lombok.Getter;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 @Getter
+@Component
 public class ConversorDeMoedas {
 
     public Double converterEmSatoches(Double valorInvestido, Double cotacaoAtual) {
